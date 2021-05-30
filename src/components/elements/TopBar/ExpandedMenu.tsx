@@ -9,10 +9,63 @@ const ExpandedMenu: FC = () => {
       <div className="search-bar">
         <input type='text' placeholder='Filter...' className='searchInput' />
       </div>
-      <span>Element 1</span>
-      <span>Element 2</span>
-      <span>Element 3</span>
-      <span>Element 4</span>
+      <div className="wrapper-menu">
+        <p className="menu-title">Platform</p>
+        <div className="link-menu">
+          <img src="../../../media/icons/house2.svg" className="link-menu-icon"></img>
+          <p>Home</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/publications.svg" className="link-menu-icon"></img>
+          <p>Publications</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/people.svg" className="link-menu-icon"></img>
+          <p>People</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/entities.svg" className="link-menu-icon"></img>
+          <p>Entities</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/administration.svg" className="link-menu-icon"></img>
+          <p>Administration</p>
+        </div>
+        <p className="menu-title">Workspaces</p>
+        <div className="link-menu">
+          <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
+          <p>Client contract</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
+          <p>Supplier contract</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/entities2.svg" className="link-menu-icon"></img>
+          <p>Corporate</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
+          <p>Group Norms</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
+          <p>Real estate contracts</p>
+        </div>
+        <p className="menu-title">Account</p>
+        <div className="link-menu">
+          <img src="../../../media/icons/privacy.svg" className="link-menu-icon"></img>
+          <p>Privacy</p>
+        </div>
+        <div className="link-menu">
+          <img src="../../../media/icons/settings.svg" className="link-menu-icon"></img>
+          <p>Settings</p>
+        </div>
+        <div className="logout link-menu">
+          <img src="../../../media/icons/logout.svg" className="link-menu-icon"></img>
+          <p>Logout</p>
+        </div>
+      </div>
     </div>
   );
 };

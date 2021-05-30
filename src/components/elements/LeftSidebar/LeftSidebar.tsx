@@ -7,7 +7,7 @@ export const LeftSidebar: FC = () => {
       <div className="profile">
         <div className="top-section">
           <img src="../../../media/logo.png" className="avatar"></img>
-          <h1>Humberta Swift</h1>
+          <h1 className="profile-name">Humberta Swift</h1>
           <h2>Job title - Company</h2>
         </div>
         <div className="bottom-section">

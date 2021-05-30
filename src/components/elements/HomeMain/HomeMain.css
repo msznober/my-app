@@ -1,0 +1,187 @@
+.home-main-wrapper {
+  height: 100vh;
+  width: 70%;
+  float: left;
+  margin: 20px 5% 0 5%;
+}
+
+/*Publikacje*/
+
+.publications {
+  height: 30%;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+}
+
+.featured-publication {
+  background-color: red;
+  width: 30%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.featured-publication-box {
+  width: 100%;
+  text-align: left;
+}
+
+p.box-content {
+  color: white;
+  font-weight: 500;
+}
+
+.meta-box {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.meta-box p {
+  color: white;
+  font-size: 14px;
+}
+
+.meta-date,
+.meta-avatar {
+  padding-right: 10px;
+}
+
+.latest-publications {
+  width: 70%;
+  height: 100%;
+  float: left;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+
+h1.latest-title {
+  color: black;
+  font-size: 20px;
+}
+
+p.more-publications {
+  font-weight: 600;
+  color: black;
+  margin-top: 10px;
+}
+
+div.publication {
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.publication-avatar {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  background-color: red;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+  border-radius: 5px;
+}
+
+
+.publication-meta-box {
+  display: flex;
+  margin-top: 5px;
+}
+
+/*Workspaces*/
+
+div.workspaces {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+h1.workspace-title {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+div.workspaces-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.workspace-box {
+  height: 200px;
+  width: 24%;
+  background-color: white;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+  border-radius: 5px;
+}
+
+div.workspace-top {
+  height: 45%;
+  background-image: url('tlo_workspaces.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/*Resume your work*/
+div.resume-work {
+  width: 100%;
+  margin-top: 10px;
+}
+
+h1.resume-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+div.resume-publication {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+h3.resume-title {
+  margin-top: -5px;
+  font-size: 18px;
+}
+
+p.resume-content {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.resume-meta-wrapper {
+  display: flex;
+  margin-top: 5px;
+}
+
+.resume-meta-wrapper p {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.company-image {
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  margin-top: 2px;
+  margin-right: 3px;
+  border-radius: 50%;
+}
+
+.resume-icon {
+  height: 12px;
+  margin-right: 3px;
+  margin-top: 2px;
+}

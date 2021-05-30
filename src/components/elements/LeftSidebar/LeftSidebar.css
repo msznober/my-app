@@ -1,7 +1,8 @@
 .sidebar-wrapper {
-  width: 250px;
-  margin-left: 50px;
+  width: 15%;
+  margin-left: 5%;
   margin-top: 20px;
+  float: left;
 }
 
 .profile {
@@ -28,7 +29,7 @@
   height: 64px;
 }
 
-h1 {
+h1.profile-name {
   font-size: 18px;
   color: #374BA3;
   margin: 10px 0 5px 0;
