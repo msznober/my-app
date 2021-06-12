@@ -1,8 +1,10 @@
-import { FC } from 'react';
+import { FC, useState, useContext } from 'react';
 import './TopBar.css';
 import useDropdown from 'react-dropdown-hook';
+import { CurrentUserContext } from '../../../App';
 
 const ExpandedMenu: FC = () => {
+  const currentUser = useContext(CurrentUserContext);
 
   return (
     <div className="expanded-menu-wrapper">
@@ -53,6 +55,15 @@ const ExpandedMenu: FC = () => {
           <p>Real estate contracts</p>
         </div>
         <p className="menu-title">Account</p>
+        <div className="menu-profile">
+          <div className="menu-profile-photo-wrap">
+            <img src={currentUser['thumbnailUrl']} className="menu-profile-photo"></img>
+          </div>
+          <div className="menu-profile-content-wrap">
+            <p className="profile-name"> {currentUser['name']}</p>
+            <p className="profile-see-link">See profile</p>
+          </div>
+        </div>
         <div className="link-menu">
           <img src="../../../media/icons/privacy.svg" className="link-menu-icon"></img>
           <p>Privacy</p>

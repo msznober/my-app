@@ -1,14 +1,18 @@
-import { FC } from 'react';
+import { FC, useState, useContext } from 'react';
 import './LeftSidebar.css';
+import { CurrentUserContext } from '../../../App';
 
 export const LeftSidebar: FC = () => {
+  const currentUser = useContext(CurrentUserContext);
+
+
   return (
     <div className="sidebar-wrapper">
       <div className="profile">
         <div className="top-section">
-          <img src="../../../media/logo.png" className="avatar"></img>
-          <h1 className="profile-name">Humberta Swift</h1>
-          <h2>Job title - Company</h2>
+          <img src={currentUser['thumbnailUrl']} className="avatar"></img>
+          <h1 className="profile-name"> {currentUser['name']}</h1>
+          <h2> {currentUser['company'] ? currentUser['company']['name'] : 'company name'}</h2>
         </div>
         <div className="bottom-section">
           <div className="bottom-wrapper">
@@ -28,7 +32,7 @@ export const LeftSidebar: FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
       <div className="links">
         <div className="link-wrapper">
           <img src="../../../media/icons/publications.svg" className="link-icon"></img>
@@ -43,7 +47,7 @@ export const LeftSidebar: FC = () => {
           <p>Entities</p>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
