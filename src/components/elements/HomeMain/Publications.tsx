@@ -1,6 +1,7 @@
 import { FC, useContext, useState } from 'react';
 import { PostsContext } from '../../../App';
 import './HomeMain.css';
+import { Link } from 'react-router-dom';
 
 export const Publications: FC = () => {
   const postsData = useContext(PostsContext);
@@ -63,7 +64,8 @@ export const Publications: FC = () => {
             </div>
           </div>
         </div>
-        <p className="more-publications">See more publications</p>
+        <Link to='/publicationspage' className='more-publications'>
+          See more publications</Link>
       </div>
     </div>
   );

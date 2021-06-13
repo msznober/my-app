@@ -76,10 +76,11 @@ h1.latest-title {
   font-size: 20px;
 }
 
-p.more-publications {
+.more-publications {
   font-weight: 600;
   color: black;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 div.publication {

@@ -1,9 +1,14 @@
 import { FC, useEffect, useState, createContext } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopBar from './components/elements/TopBar/TopBar';
 import LeftSidebar from './components/elements/LeftSidebar/LeftSidebar';
 import HomeMain from './components/elements/HomeMain/HomeMain';
 import './App.css';
 import axios from 'axios';
+import PublicationsPage from './components/elements/PublicationsPage/PublicationsPage';
+import EntitiesPage from './components/elements/EntitiesPage/EntitiesPage';
+import WorkspacesPage from './components/elements/WorkspacesPage/WorkspacesPage';
+import ProfilePage from './components/elements/ProfilePage/ProfilePage';
 
 export const CurrentUserContext = createContext({});
 export const UsersDataContext = createContext({});
@@ -99,13 +104,31 @@ function App() {
       <UsersDataContext.Provider value={usersData}>
         <PostsContext.Provider value={postsData}>
           <ResumeWorkContext.Provider value={resumeWork}>
-            <TopBar />
-            <LeftSidebar />
-            {Object.keys(posts).length !== 0 &&
-              Object.keys(photos).length !== 0 &&
-              Object.keys(users).length !== 0 &&
-              Object.keys(comments).length !== 0 &&
-              <HomeMain />}
+            <Router>
+              <TopBar />
+              <LeftSidebar />
+              <Switch>
+                <Route exact path='/'>
+                  {Object.keys(posts).length !== 0 &&
+                    Object.keys(photos).length !== 0 &&
+                    Object.keys(users).length !== 0 &&
+                    Object.keys(comments).length !== 0 &&
+                    <HomeMain />}
+                </Route>
+                <Route path='/publicationspage'>
+                  <PublicationsPage />
+                </Route>
+                <Route path='/entitiespage'>
+                  <EntitiesPage />
+                </Route>
+                <Route path='/profilepage'>
+                  <ProfilePage />
+                </Route>
+                <Route path='/workspacespage'>
+                  <WorkspacesPage />
+                </Route>
+              </Switch>
+            </Router>
           </ResumeWorkContext.Provider>
         </PostsContext.Provider>
       </UsersDataContext.Provider>

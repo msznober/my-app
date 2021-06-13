@@ -85,10 +85,12 @@ p.menu-title {
   align-items: flex-start;
 }
 
-.link-menu p {
+.link-menu p,
+.link-menu-link {
   font-size: 14px;
   color: #000;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .link-menu-icon {
@@ -133,9 +135,10 @@ p.menu-title {
   font-weight: 500;
 }
 
-p.profile-see-link {
+.profile-see-link {
   font-size: 12px;
   color: #374BA3;
+  text-decoration: none;
 }
 
 

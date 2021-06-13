@@ -1,6 +1,7 @@
 import { FC, useState, useContext } from 'react';
 import './LeftSidebar.css';
 import { CurrentUserContext } from '../../../App';
+import { Link } from 'react-router-dom';
 
 export const LeftSidebar: FC = () => {
   const currentUser = useContext(CurrentUserContext);
@@ -36,15 +37,17 @@ export const LeftSidebar: FC = () => {
       <div className="links">
         <div className="link-wrapper">
           <img src="../../../media/icons/publications.svg" className="link-icon"></img>
-          <p>Publications</p>
+          <Link to='/publicationspage' className='left-bar-link'>
+            Publications</Link>
         </div>
         <div className="link-wrapper">
           <img src="../../../media/icons/ecosystem.svg" className="link-icon"></img>
-          <p>Ecosystem</p>
+          <p className="left-bar-link">Ecosystem</p>
         </div>
         <div className="link-wrapper">
           <img src="../../../media/icons/entities.svg" className="link-icon"></img>
-          <p>Entities</p>
+          <Link to='/entitiespage' className='left-bar-link'>
+            Entities</Link>
         </div>
       </div>
     </div >

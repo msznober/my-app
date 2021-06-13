@@ -2,6 +2,7 @@ import { FC, useState, useContext } from 'react';
 import './TopBar.css';
 import useDropdown from 'react-dropdown-hook';
 import { CurrentUserContext } from '../../../App';
+import { Link } from 'react-router-dom';
 
 const ExpandedMenu: FC = () => {
   const currentUser = useContext(CurrentUserContext);
@@ -15,11 +16,13 @@ const ExpandedMenu: FC = () => {
         <p className="menu-title">Platform</p>
         <div className="link-menu">
           <img src="../../../media/icons/house2.svg" className="link-menu-icon"></img>
-          <p>Home</p>
+          <Link to='/' className='link-menu-link'>
+            Home</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/publications.svg" className="link-menu-icon"></img>
-          <p>Publications</p>
+          <Link to='/publicationspage' className='link-menu-link'>
+            Publications</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/people.svg" className="link-menu-icon"></img>
@@ -27,7 +30,8 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/entities.svg" className="link-menu-icon"></img>
-          <p>Entities</p>
+          <Link to='/entitiespage' className='link-menu-link'>
+            Entities</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/administration.svg" className="link-menu-icon"></img>
@@ -61,7 +65,8 @@ const ExpandedMenu: FC = () => {
           </div>
           <div className="menu-profile-content-wrap">
             <p className="profile-name"> {currentUser['name']}</p>
-            <p className="profile-see-link">See profile</p>
+            <Link to='/profilepage' className='profile-see-link'>
+              See Profile</Link>
           </div>
         </div>
         <div className="link-menu">
@@ -70,7 +75,8 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/settings.svg" className="link-menu-icon"></img>
-          <p>Settings</p>
+          <Link to='/profilepage' className='link-menu-link'>
+            Settings</Link>
         </div>
         <div className="logout link-menu">
           <img src="../../../media/icons/logout.svg" className="link-menu-icon"></img>
