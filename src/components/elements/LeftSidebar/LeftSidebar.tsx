@@ -11,9 +11,11 @@ export const LeftSidebar: FC = () => {
     <div className="sidebar-wrapper">
       <div className="profile">
         <div className="top-section">
-          <img src={currentUser['thumbnailUrl']} className="avatar"></img>
-          <h1 className="profile-name"> {currentUser['name']}</h1>
-          <h2> {currentUser['company'] ? currentUser['company']['name'] : 'company name'}</h2>
+          <Link to='/profilepage' className='profile-see-link'>
+            <img src={currentUser['thumbnailUrl']} className="avatar"></img>
+            <h1 className="profile-name"> {currentUser['name']}</h1>
+            <h2> {currentUser['company'] ? currentUser['company']['name'] : 'company name'}</h2>
+          </Link>
         </div>
         <div className="bottom-section">
           <div className="bottom-wrapper">
@@ -21,7 +23,9 @@ export const LeftSidebar: FC = () => {
               <img src="../../../media/icons/people.svg" className="left-icon"></img>
               <p>Your network</p></div>
             <div className="right">
-              <img src="../../../media/icons/network.svg" className="right-icon"></img>
+              <Link to='/testpage' className='left-bar-link'>
+                <img src="../../../media/icons/network.svg" className="right-icon"></img>
+              </Link>
             </div>
           </div>
           <div className="bottom-wrapper">
@@ -29,7 +33,8 @@ export const LeftSidebar: FC = () => {
               <img src="../../../media/icons/people.svg" className="left-icon"></img>
               <p>Your Publications</p></div>
             <div className="right">
-              <img src="../../../media/icons/plus.svg" className="right-icon"></img>
+              <Link to='/testpage' className='left-bar-link'>
+                <img src="../../../media/icons/plus.svg" className="right-icon"></img></Link>
             </div>
           </div>
         </div>
@@ -37,12 +42,13 @@ export const LeftSidebar: FC = () => {
       <div className="links">
         <div className="link-wrapper">
           <img src="../../../media/icons/publications.svg" className="link-icon"></img>
-          <Link to='/publicationspage' className='left-bar-link'>
+          <Link to='/testpage' className='left-bar-link'>
             Publications</Link>
         </div>
         <div className="link-wrapper">
           <img src="../../../media/icons/ecosystem.svg" className="link-icon"></img>
-          <p className="left-bar-link">Ecosystem</p>
+          <Link to='/testpage' className='left-bar-link'>
+            Ecosystem</Link>
         </div>
         <div className="link-wrapper">
           <img src="../../../media/icons/entities.svg" className="link-icon"></img>

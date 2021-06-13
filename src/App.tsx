@@ -5,7 +5,7 @@ import LeftSidebar from './components/elements/LeftSidebar/LeftSidebar';
 import HomeMain from './components/elements/HomeMain/HomeMain';
 import './App.css';
 import axios from 'axios';
-import PublicationsPage from './components/elements/PublicationsPage/PublicationsPage';
+import TestPage from './components/elements/TestPage/TestPage';
 import EntitiesPage from './components/elements/EntitiesPage/EntitiesPage';
 import WorkspacesPage from './components/elements/WorkspacesPage/WorkspacesPage';
 import ProfilePage from './components/elements/ProfilePage/ProfilePage';
@@ -115,11 +115,13 @@ function App() {
                     Object.keys(comments).length !== 0 &&
                     <HomeMain />}
                 </Route>
-                <Route path='/publicationspage'>
-                  <PublicationsPage />
+                <Route path='/testpage'>
+                  <TestPage />
                 </Route>
                 <Route path='/entitiespage'>
-                  <EntitiesPage />
+                  {Object.keys(photos).length !== 0 &&
+                    Object.keys(users).length !== 0 &&
+                    <EntitiesPage />}
                 </Route>
                 <Route path='/profilepage'>
                   <ProfilePage />

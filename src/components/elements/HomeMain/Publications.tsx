@@ -64,7 +64,7 @@ export const Publications: FC = () => {
             </div>
           </div>
         </div>
-        <Link to='/publicationspage' className='more-publications'>
+        <Link to='/testpage' className='more-publications'>
           See more publications</Link>
       </div>
     </div>

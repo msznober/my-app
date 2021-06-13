@@ -21,7 +21,7 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/publications.svg" className="link-menu-icon"></img>
-          <Link to='/publicationspage' className='link-menu-link'>
+          <Link to='/testpage' className='link-menu-link'>
             Publications</Link>
         </div>
         <div className="link-menu">
