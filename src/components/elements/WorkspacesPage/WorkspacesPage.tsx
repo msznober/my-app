@@ -1,10 +1,17 @@
 import React, { FC } from "react";
 import './WorkspacesPage.css';
+import ResumeWork from '../HomeMain/ResumeWork';
 
 const WorkspacesPage: FC = () => {
   return (
     <div className="workspaces-main-wrapper">
-      <h1>Workspaces</h1>
+      <div className="hero-image"></div>
+      <div className="workspace-blocks">
+        <div className="single-block"></div>
+        <div className="single-block"></div>
+        <div className="single-block"></div>
+      </div>
+      <ResumeWork />
     </div>
   );
 };

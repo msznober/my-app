@@ -7,6 +7,7 @@ import './App.css';
 import axios from 'axios';
 import TestPage from './components/elements/TestPage/TestPage';
 import EntitiesPage from './components/elements/EntitiesPage/EntitiesPage';
+import EntitiesPageList from './components/elements/EntitiesPage/EntitiesPageList';
 import WorkspacesPage from './components/elements/WorkspacesPage/WorkspacesPage';
 import ProfilePage from './components/elements/ProfilePage/ProfilePage';
 
@@ -122,6 +123,11 @@ function App() {
                   {Object.keys(photos).length !== 0 &&
                     Object.keys(users).length !== 0 &&
                     <EntitiesPage />}
+                </Route>
+                <Route path='/entitiespagelist'>
+                  {Object.keys(photos).length !== 0 &&
+                    Object.keys(users).length !== 0 &&
+                    <EntitiesPageList />}
                 </Route>
                 <Route path='/profilepage'>
                   <ProfilePage />

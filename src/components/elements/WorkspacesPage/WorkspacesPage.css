@@ -4,3 +4,27 @@
   float: left;
   margin: 20px 5% 20px 5%;
 }
+
+.hero-image {
+  width: 100%;
+  height: 30vh;
+  background-color: red;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.workspace-blocks {
+  width: 100%;
+  height: 30vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-block {
+  width: 32%;
+  background-color: blue;
+  height: 100%;
+  border-radius: 5%;
+}

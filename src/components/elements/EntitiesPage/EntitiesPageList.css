@@ -18,8 +18,8 @@
   flex-wrap: wrap;
 }
 
-div.single-entity {
-  width: 30%;
+div.single-entity-list {
+  width: 91%;
   background-color: white;
   box-shadow: 0px 5px 15px 2px #e0e0e0;
   border-radius: 5px;
