@@ -26,7 +26,8 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/people.svg" className="link-menu-icon"></img>
-          <p>People</p>
+          <Link to='/testpage' className='link-menu-link'>
+            People</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/entities.svg" className="link-menu-icon"></img>
@@ -35,28 +36,34 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/administration.svg" className="link-menu-icon"></img>
-          <p>Administration</p>
+          <Link to='/testpage' className='link-menu-link'>
+            Administration</Link>
         </div>
         <p className="menu-title">Workspaces</p>
         <div className="link-menu">
           <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
-          <p>Client contract</p>
+          <Link to='/workspacespage' className='link-menu-link'>
+            Client contract</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
-          <p>Supplier contract</p>
+          <Link to='/workspacespage' className='link-menu-link'>
+            Supplier contract</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/entities2.svg" className="link-menu-icon"></img>
-          <p>Corporate</p>
+          <Link to='/workspacespage' className='link-menu-link'>
+            Corporate</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
-          <p>Group Norms</p>
+          <Link to='/workspacespage' className='link-menu-link'>
+            Group norms</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/cog.svg" className="link-menu-icon"></img>
-          <p>Real estate contracts</p>
+          <Link to='/workspacespage' className='link-menu-link'>
+            Real estate contracts</Link>
         </div>
         <p className="menu-title">Account</p>
         <div className="menu-profile">
@@ -71,7 +78,8 @@ const ExpandedMenu: FC = () => {
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/privacy.svg" className="link-menu-icon"></img>
-          <p>Privacy</p>
+          <Link to='/testpage' className='link-menu-link'>
+            Privacy</Link>
         </div>
         <div className="link-menu">
           <img src="../../../media/icons/settings.svg" className="link-menu-icon"></img>

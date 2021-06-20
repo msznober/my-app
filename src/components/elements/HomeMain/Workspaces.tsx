@@ -1,17 +1,19 @@
 import { FC } from 'react';
 import './HomeMain.css';
+import { Link } from 'react-router-dom';
 
 export const Workspaces: FC = () => {
   return (
     <div className="workspaces">
       <h1 className="workspace-title">Workspaces</h1>
       <div className="workspaces-wrapper">
+
         <div className="workspace-box">
           <div className="workspace-top"></div>
           <div className="workspace-bottom">
             <div className="workspace-title">
               <div className="workspace-icon-box"><img src="../../../media/icons/entities2.svg" className="workspace-icon"></img></div>
-              <h3>Client contract</h3>
+              <Link to='/workspacespage' className='link-menu-link'><h3>Client contract</h3></Link>
             </div>
             <div className="workspace-meta">
               <img src="../../../media/icons/entities.svg" className="workspace-meta-icon"></img>
@@ -24,12 +26,13 @@ export const Workspaces: FC = () => {
             </div>
           </div>
         </div>
+
         <div className="workspace-box">
           <div className="workspace-top"></div>
           <div className="workspace-bottom">
             <div className="workspace-title">
               <div className="workspace-icon-box"><img src="../../../media/icons/entities2.svg" className="workspace-icon"></img></div>
-              <h3>Suppiler contract</h3>
+              <Link to='/workspacespage' className='link-menu-link'><h3>Suppiler contract</h3></Link>
             </div>
             <div className="workspace-meta">
               <img src="../../../media/icons/entities.svg" className="workspace-meta-icon"></img>
@@ -47,7 +50,7 @@ export const Workspaces: FC = () => {
           <div className="workspace-bottom">
             <div className="workspace-title">
               <div className="workspace-icon-box"><img src="../../../media/icons/entities2.svg" className="workspace-icon"></img></div>
-              <h3>Corporate</h3>
+              <Link to='/workspacespage' className='link-menu-link'><h3>Corporate</h3></Link>
             </div>
             <div className="workspace-meta">
               <img src="../../../media/icons/entities.svg" className="workspace-meta-icon"></img>
@@ -65,7 +68,7 @@ export const Workspaces: FC = () => {
           <div className="workspace-bottom">
             <div className="workspace-title">
               <div className="workspace-icon-box"><img src="../../../media/icons/entities2.svg" className="workspace-icon"></img></div>
-              <h3>Group norms</h3>
+              <Link to='/workspacespage' className='link-menu-link'><h3>Group norms</h3></Link>
             </div>
             <div className="workspace-meta">
               <img src="../../../media/icons/entities.svg" className="workspace-meta-icon"></img>
@@ -83,7 +86,7 @@ export const Workspaces: FC = () => {
           <div className="workspace-bottom">
             <div className="workspace-title">
               <div className="workspace-icon-box"><img src="../../../media/icons/entities2.svg" className="workspace-icon"></img></div>
-              <h3>Client contract</h3>
+              <Link to='/workspacespage' className='link-menu-link'><h3>Real estate contracts</h3></Link>
             </div>
             <div className="workspace-meta">
               <img src="../../../media/icons/entities.svg" className="workspace-meta-icon"></img>

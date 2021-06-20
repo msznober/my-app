@@ -130,10 +130,14 @@ function App() {
                     <EntitiesPageList />}
                 </Route>
                 <Route path='/profilepage'>
-                  <ProfilePage />
+                  {Object.keys(photos).length !== 0 &&
+                    Object.keys(users).length !== 0 &&
+                    <ProfilePage />}
                 </Route>
                 <Route path='/workspacespage'>
-                  <WorkspacesPage />
+                  {Object.keys(photos).length !== 0 &&
+                    Object.keys(users).length !== 0 &&
+                    <WorkspacesPage />}
                 </Route>
               </Switch>
             </Router>

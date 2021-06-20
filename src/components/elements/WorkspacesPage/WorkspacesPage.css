@@ -7,15 +7,48 @@
 
 .hero-image {
   width: 100%;
-  height: 30vh;
-  background-color: red;
+  height: 35vh;
+  background-image: url(./tlo_workspaces.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 5px;
   margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+}
+
+.hero-description {
+  width: 100%;
+  height: 35%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  border-radius: 0 0 5px 5px;
+}
+
+.hero-icon-wrapper {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-wrapper {
+  height: 100%;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hero-text-wrapper h1 {
+  font-size: 24px;
 }
 
 .workspace-blocks {
   width: 100%;
-  height: 30vh;
   border-radius: 5px;
   margin-bottom: 20px;
   display: flex;
@@ -24,7 +57,32 @@
 
 .single-block {
   width: 32%;
-  background-color: blue;
+  background-color: white;
   height: 100%;
   border-radius: 5%;
+  padding: 20px 0;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+}
+
+.single-icon-wrap {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.single-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.single-name {
+  color: black;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.single-text {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 16px;
 }
