@@ -1,6 +1,174 @@
 .profile-main-wrapper {
-  height: 100vh;
+  height: 150vh;
   width: 70%;
   float: left;
   margin: 20px 5% 20px 5%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 2px #e0e0e0;
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user-info-image,
+.user-info-data-name {
+  margin-right: 20px;
+}
+
+.user-info-data-name {
+  color: black;
+  font-size: 20px;
+}
+
+.user-info-data h2,
+.user-info-contact h2 {
+  color: black;
+  font-size: 14px;
+}
+
+.user-info-contact {
+  margin-top: 30px;
+}
+
+.user-info-contact {
+  margin-right: 100px;
+}
+
+.user-action h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.action-single-wrap {
+  display: flex;
+}
+
+.action-single-wrap img {
+  width: 16px;
+}
+
+.features-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-info h4 {
+  font-size: 14px;
+  color: #878B91;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.features-input {
+  margin-bottom: 20px;
+  border: none;
+  background: #CCCCFF;
+  width: 200px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+.edit-button {
+  border: none;
+  background: white;
+}
+
+.panel-content {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.panel-content h4 {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.panel-content h5 {
+  font-size: 14px;
+  color: #878B91;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.panel-content h6 {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+.icon-wrap {
+  display: flex;
+  margin-top: 5px;
+}
+
+.icon-wrap p {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+.icon-wrap img {
+  height: 16px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+  text-align: center;
+}
+
+th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+  font-weight: 600;
+}
+
+.table-input {
+  text-align: center;
+  background: white;
+  border: none;
+  font-size: 14px;
+  width: 100px;
 }
