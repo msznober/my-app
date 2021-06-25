@@ -1,5 +1,5 @@
 .profile-main-wrapper {
-  height: 150vh;
+  height: 170vh;
   width: 70%;
   float: left;
   margin: 20px 5% 20px 5%;
@@ -69,7 +69,8 @@
 
 .features-input {
   margin-bottom: 20px;
-  border: none;
+  border: 2px solid #CCCCFF;
+  ;
   background: #CCCCFF;
   width: 200px;
   text-align: center;
@@ -95,8 +96,8 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-
 }
+
 
 .panel-content h4 {
   font-size: 16px;
@@ -138,6 +139,7 @@ table {
   border: 1px solid black;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 20px;
 }
 
 td {
@@ -168,7 +170,81 @@ th {
 .table-input {
   text-align: center;
   background: white;
-  border: none;
+  border: 2px solid white;
   font-size: 14px;
   width: 100px;
+  border-radius: 6px;
+  color: black;
+}
+
+.edit-active {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.table-edit-active {
+  border: 2px solid black;
+}
+
+.people-single {
+  display: flex;
+}
+
+.people-single h6 {
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+.people-single-img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.people-single-svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+@media(max-width:980px) {
+  .profile-main-wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width: 850px) {
+  .table-input {
+    width: 80px;
+  }
+}
+
+@media(max-width:600px) {
+  .user-action h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .table-input {
+    width: 60px;
+  }
+
+  .profile-main-wrapper {
+    height: 190vh;
+  }
+
+  .user-info {
+    flex-direction: column;
+  }
+}
+
+@media(max-width:450px) {
+  .profile-main-wrapper {
+    height: 210vh;
+  }
+
+  .table-input {
+    width: 30px;
+  }
 }

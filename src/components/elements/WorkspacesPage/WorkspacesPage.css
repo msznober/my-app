@@ -53,6 +53,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .single-block {
@@ -85,4 +86,38 @@
   margin-top: 10px;
   margin-right: 20px;
   font-size: 16px;
+}
+
+@media(max-width:980px) {
+  .workspaces-main-wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width:600px) {
+  .hero-text-wrapper h1 {
+    font-size: 18px;
+  }
+
+  .hero-text-wrapper p {
+    font-size: 14px;
+  }
+
+  .single-block {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .single-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .single-name {
+    font-size: 18px;
+  }
+
+  .single-text {
+    font-size: 14px;
+  }
 }

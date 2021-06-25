@@ -74,3 +74,26 @@ div.single-entity {
   width: 20px;
   cursor: pointer;
 }
+
+@media(max-width:980px) {
+  .entities-main-wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width:600px) {
+  div.single-entity {
+    width: 45%;
+  }
+}
+
+@media(max-width: 450px) {
+  h3.entity-title {
+    font-size: 14px;
+  }
+
+  .entity-logo {
+    width: 48px;
+    height: 48px;
+  }
+}

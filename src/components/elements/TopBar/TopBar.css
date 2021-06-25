@@ -210,3 +210,14 @@ p.menu-title {
   width: 20px;
   text-align: center;
 }
+
+@media(max-width:980px) {
+
+  .icons-container {
+    width: 20%;
+  }
+
+  .expanded-menu-wrapper {
+    width: 35vw;
+  }
+}

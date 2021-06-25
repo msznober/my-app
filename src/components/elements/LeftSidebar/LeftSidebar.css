@@ -101,3 +101,57 @@ h2 {
   text-decoration: none;
   color: black;
 }
+
+@media(max-width:1230px) {
+  .left p {
+    font-size: 12px;
+  }
+
+  .right-icon {
+    height: 22px;
+    width: 22px;
+  }
+
+  .left-bar-link {
+    font-size: 12px;
+  }
+}
+
+@media(max-width:980px) {
+
+  .sidebar-wrapper {
+    width: 90%;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .right-icon {
+    height: 22px;
+    width: 32px;
+  }
+
+  .left-bar-link {
+    font-size: 16px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .link-wrapper {
+    margin-left: 20px;
+  }
+}
+
+@media(max-width:450px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

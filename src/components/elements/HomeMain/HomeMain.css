@@ -282,3 +282,47 @@ p.resume-content {
   margin-right: 3px;
   margin-top: 2px;
 }
+
+@media(max-width:980px) {
+  .home-main-wrapper {
+    width: 90%;
+  }
+
+  .publications {
+    height: 40%;
+  }
+
+  div.workspace-box {
+    width: 50%;
+  }
+}
+
+@media(max-width:600px) {
+  .publications {
+    height: 50%;
+  }
+}
+
+@media(max-width:450px) {
+  .publications {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+
+  .featured-image {
+    border-radius: 5px;
+  }
+
+  .featured-publication {
+    width: 100%;
+  }
+
+  .latest-publications {
+    width: 100%;
+  }
+
+  div.workspace-box {
+    width: 75%;
+  }
+}
