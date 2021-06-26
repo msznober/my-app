@@ -121,3 +121,9 @@
     font-size: 14px;
   }
 }
+
+@media(max-width: 400px) {
+  .hero-description {
+    height: 45%;
+  }
+}

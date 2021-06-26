@@ -221,3 +221,37 @@ p.menu-title {
     width: 35vw;
   }
 }
+
+@media(max-width:600px) {
+  .search-container {
+    display: none;
+  }
+
+  .expanded-menu-wrapper {
+    width: 50vw;
+  }
+
+  .icons-container {
+    width: 30%;
+  }
+
+  .dropdown-wrapper {
+    width: 25vw;
+  }
+}
+
+@media(max-width:450px) {
+  .expanded-menu-wrapper {
+    width: 50vw;
+  }
+
+  .dropdown-wrapper {
+    width: 35vw;
+  }
+}
+
+@media(max-width:400px) {
+  .expanded-menu-wrapper {
+    width: 70vw;
+  }
+}

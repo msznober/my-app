@@ -310,6 +310,10 @@ p.resume-content {
     height: 60%;
   }
 
+  div.workspace-box {
+    width: 75%;
+  }
+
   .featured-image {
     border-radius: 5px;
   }
@@ -320,9 +324,5 @@ p.resume-content {
 
   .latest-publications {
     width: 100%;
-  }
-
-  div.workspace-box {
-    width: 75%;
   }
 }

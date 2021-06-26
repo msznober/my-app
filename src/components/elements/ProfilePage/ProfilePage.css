@@ -248,3 +248,19 @@ th {
     width: 30px;
   }
 }
+
+@media(max-width: 400px) {
+  .profile-main-wrapper {
+    height: 300vh;
+  }
+
+  .people-single h6 {
+    margin-right: 10px;
+  }
+
+  td,
+  th,
+  .table-input {
+    font-size: 10px;
+  }
+}
